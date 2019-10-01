@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
-project(CLion)
+project(CLion2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CLion main.cpp)
+add_executable(CLion2 main.cpp)
