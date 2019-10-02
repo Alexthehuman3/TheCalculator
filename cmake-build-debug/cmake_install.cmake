@@ -1,8 +1,8 @@
-# Install script for directory: H:/ESD/CalculatorProj
+# Install script for directory: F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CLion")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CLion2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "H:/ESD/CalculatorProj/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

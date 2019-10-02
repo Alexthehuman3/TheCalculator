@@ -12,3 +12,13 @@ int main() {
     std::cout <<"Your added number is "<< X+Y << std:: endl;
     return 0;
 }
+
+float addition(float x, float y)
+{
+    int NUMBER_OF_NUMS;
+    std::cout << "You have chosen Addition\n";
+    std::cout << "How many numbers would you like to add? :";
+    std::cin >> NUMBER_OF_NUMS;
+    std::cout << "Number 1: ";
+    std::cin >> x;
+}

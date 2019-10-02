@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "H:/ESD/CalculatorProj/main.cpp" "H:/ESD/CalculatorProj/cmake-build-debug/CMakeFiles/CLion.dir/main.cpp.obj"
+  "F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/main.cpp" "F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/cmake-build-debug/CMakeFiles/CLion2.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
