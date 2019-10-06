@@ -9,4 +9,8 @@
 F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/main.cpp
 iostream
 -
+cctype
+-
+cstring
+-
 
