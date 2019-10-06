@@ -14,7 +14,6 @@
     <list default="true" id="4fbb6075-1086-484a-b668-f3b189d882e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CLion2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CLion2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CLion2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CLion2.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CLion2.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CLion2.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CLion2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CLion2.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -86,7 +85,7 @@
       <workItem from="1570040849399" duration="830000" />
       <workItem from="1570057069769" duration="157000" />
       <workItem from="1570057272360" duration="1103000" />
-      <workItem from="1570376264462" duration="11495000" />
+      <workItem from="1570376264462" duration="14267000" />
     </task>
     <servers />
   </component>

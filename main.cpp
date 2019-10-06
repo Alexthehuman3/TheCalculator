@@ -1,15 +1,20 @@
+//============= Libraries =====================
 #include <iostream>
 #include <cctype>
 #include <cstring>
 
 
+//============= Enter2Cont ====================
 inline void WaitEnter()
 {
     std::cout << "Press Enter to continue...";
     while (std::cin.get()!='\n');
 }
 
-bool areYouSure()
+
+//=========== Double-Check ====================
+//variant 0 = Default, 1 = Function Retry
+bool check_With_User(int variant)
 {
     bool confirmation = true;
     bool return_Statement;
@@ -17,8 +22,22 @@ bool areYouSure()
 
     while (confirmation)
     {
-        std::cout << "Are you sure? (y/n):";
-        std::cin >> yesno;
+        if (variant == 0)
+        {
+            std::cout << "Are you sure? (y/n):";
+            std::cin >> yesno;
+        }
+        else if (variant == 1)
+        {
+            std::cout << "Do you want to retry? (y/n):";
+            std::cin >> yesno;
+        }
+        else
+        {
+            std::cout << "ERROR: check_With_User out of recognised Variant";
+            return_Statement = false;
+            confirmation = false;
+        }
 
         if (yesno == "y")
         {
@@ -35,27 +54,11 @@ bool areYouSure()
             std::cout << "Invalid Input, please try again!\n";
         }
     }
-
-    /*
-    // ============= Attempt 2 =================
-    bool return_Statement;
-    switch (yesno)
-    {
-        case 1:
-            return_Statement = true;
-            break;
-        case 2:
-            return_Statement = false;
-            break;
-        default:
-            std::cout << "Invalid Number, please try again!\n";
-            return_Statement = false;
-            break;
-    }
-     */
     return return_Statement;
 }
 
+
+//=============== Addition ====================
 float addition()
 {
     int NUMBER_OF_NUMS;
@@ -74,12 +77,16 @@ float addition()
     return TOTAL_ADDITION;
 }
 
+
+//============== Subtraction ==================
 float subtraction()
 {
     int AMOUNT_TO_SUBTRACT = 0;
     return 0;
 }
 
+
+//================ Menu =======================
 void menu()
 {
     bool menu_Active = true;
@@ -89,6 +96,7 @@ void menu()
         std::string enter_To_Continue;
         int CHOICE;
         int SUM_OF_FUNCTION = 0;
+        bool choice_Repeat = true;
         std::cout << "IMPORTANT: Please type a number then press Enter to access the functions provided in the menu\n";
         WaitEnter();
         std::cout << "========== Main Menu ==========\n"
@@ -100,14 +108,18 @@ void menu()
         std::cin >> CHOICE;
         if (CHOICE == 1)
         {
-            SUM_OF_FUNCTION = addition();
-            std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;;
+            while (choice_Repeat)
+            {
+                SUM_OF_FUNCTION = addition();
+                std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
+                choice_Repeat = check_With_User(1);
+            }
         }
 
         if (CHOICE == 0)
         {
-            bool tempBool = areYouSure();
-            if (tempBool)
+            bool confirmed = check_With_User(0);
+            if (confirmed)
             {
                 menu_Active = false;
             }
@@ -116,10 +128,16 @@ void menu()
 }
 
 
+//============== Template =====================
+void functionName()
+{
 
+}
+
+
+//================ Main =======================
 int main() {
     menu();
 }
-
 
 
