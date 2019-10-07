@@ -102,6 +102,10 @@ void menu()
         std::cout << "========== Main Menu ==========\n"
                      "1.) Addition\n"
                      "2.) Subtraction (WIP)\n"
+                     "3.) Multiplication (WIP)"
+                     "4.) Division (WIP)"
+                     "5.) Power (WIP)"
+                     "9.) Shape Calculation Menu"
                      "0.) Quit\n"
                      "===============================\n"
                      "Choice? :";
@@ -116,13 +120,28 @@ void menu()
             }
         }
 
-        if (CHOICE == 0)
+        else if (CHOICE == 2)
+        {
+            while (choice_Repeat)
+            {
+                SUM_OF_FUNCTION = subtraction();
+                std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
+                choice_Repeat = check_With_User(1);
+            }
+        }
+
+        else if (CHOICE == 0)
         {
             bool confirmed = check_With_User(0);
             if (confirmed)
             {
                 menu_Active = false;
             }
+        }
+
+        else
+        {
+            std::cout << "Invalid Input! Please retry.\n";
         }
     }
 }
