@@ -69,7 +69,7 @@ float addition()
     std::cin >> NUMBER_OF_NUMS;
     for (int i = 1; i < NUMBER_OF_NUMS+1; i++)
     {
-        std::cout << "Index " << i << std::endl;
+        //std::cout << "Index " << i << std::endl;
         std::cout << "Number " << i << ":";
         std::cin >> USER_INPUT;
         TOTAL_ADDITION += USER_INPUT;
@@ -81,10 +81,47 @@ float addition()
 //============== Subtraction ==================
 float subtraction()
 {
-    int AMOUNT_TO_SUBTRACT = 0;
-    return 0;
+    int AMOUNT_OF_NUMBERS_TO_SUBTRACT = 0;
+    float USER_INPUT;
+    float TOTAL_SUBTRACTION = 0;
+
+    std::cout << "You have chosen Subtraction.\n"
+                 "What's your number to subtract from? :";
+    std::cin >> TOTAL_SUBTRACTION;
+
+    std::cout << "Amount of numbers to subtract? :";
+    std::cin >> AMOUNT_OF_NUMBERS_TO_SUBTRACT;
+
+    for (int i = 1; i < AMOUNT_OF_NUMBERS_TO_SUBTRACT+1; i++)
+    {
+        //std::cout << "Index " << i << std::endl; //DEBUG INFO: Index
+        std::cout << "Number " << i << ":";
+        std::cin >> USER_INPUT;
+        TOTAL_SUBTRACTION -= USER_INPUT;
+    }
+
+    return TOTAL_SUBTRACTION;
 }
 
+
+//============ Multiplication =================
+float multiplication()
+{
+    int FLOAT_MULTIPLY_AMOUNT;
+    float USER_INPUT;
+    int TOTAL_MULTIPLICATION = 0;
+    std::cout << "You have chosen multiplication\n"
+                 "How many numbers would you like to multiply? :";
+    std::cin >> FLOAT_MULTIPLY_AMOUNT;
+    for (int i = 1; i < FLOAT_MULTIPLY_AMOUNT+1; i++)
+    {
+        //std::cout << "Index " << i << std::endl;
+        std::cout << "Number " << i << ":";
+        std::cin >> USER_INPUT;
+        TOTAL_MULTIPLICATION = TOTAL_MULTIPLICATION * USER_INPUT;
+    }
+    return TOTAL_MULTIPLICATION;
+}
 
 //================ Menu =======================
 void menu()
@@ -97,51 +134,63 @@ void menu()
         int CHOICE;
         int SUM_OF_FUNCTION = 0;
         bool choice_Repeat = true;
+        bool confirmed;
         std::cout << "IMPORTANT: Please type a number then press Enter to access the functions provided in the menu\n";
         WaitEnter();
         std::cout << "========== Main Menu ==========\n"
+
                      "1.) Addition\n"
-                     "2.) Subtraction (WIP)\n"
-                     "3.) Multiplication (WIP)"
-                     "4.) Division (WIP)"
-                     "5.) Power (WIP)"
-                     "9.) Shape Calculation Menu"
+                     "2.) Subtraction\n"
+                     "3.) Multiplication (WIP)\n"
+                     "4.) Division (WIP)\n"
+                     "5.) Power (WIP)\n"
+                     "6.) Roots (WIP)\n"
+                     "7.) Feature #7\n"
+                     "8.) Finding X and Ys\n"
+                     "9.) Shape Calculation Menu\n"
                      "0.) Quit\n"
                      "===============================\n"
                      "Choice? :";
         std::cin >> CHOICE;
-        if (CHOICE == 1)
-        {
-            while (choice_Repeat)
-            {
-                SUM_OF_FUNCTION = addition();
-                std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
-                choice_Repeat = check_With_User(1);
-            }
-        }
 
-        else if (CHOICE == 2)
+        switch (CHOICE)
         {
-            while (choice_Repeat)
-            {
-                SUM_OF_FUNCTION = subtraction();
-                std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
-                choice_Repeat = check_With_User(1);
-            }
-        }
+            case 0:
+                confirmed = check_With_User(0);
+                if (confirmed)
+                {
+                    menu_Active = false;
+                }
+                break;
 
-        else if (CHOICE == 0)
-        {
-            bool confirmed = check_With_User(0);
-            if (confirmed)
-            {
-                menu_Active = false;
-            }
-        }
+            case 1:
+                while (choice_Repeat)
+                {
+                    SUM_OF_FUNCTION = addition();
+                    std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
+                    choice_Repeat = check_With_User(1);
+                }
+                break;
 
-        else
-        {
-            std::cout << "Invalid Input! Please retry.\n";
+            case 2:
+                while (choice_Repeat)
+                {
+                    SUM_OF_FUNCTION = subtraction();
+                    std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
+                    choice_Repeat = check_With_User(1);
+                }
+                break;
+
+            case 3:
+                while (choice_Repeat)
+                {
+                    SUM_OF_FUNCTION = multiplication();
+                    std::cout << "The answer is "<< SUM_OF_FUNCTION << std::endl;
+                    choice_Repeat = check_With_User(1);
+                }
+
+            default:
+                std::cout << "Invalid Input! Please retry.\n";
         }
     }
 }
