@@ -80,7 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/MathFunctions.cpp">
+			<Option target="CLion2"/>
+		</Unit>
+		<Unit filename="F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/MathFunctions.h">
+			<Option target="CLion2"/>
+		</Unit>
 		<Unit filename="F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/main.cpp">
+			<Option target="CLion2"/>
+		</Unit>
+		<Unit filename="F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/utilities.cpp">
+			<Option target="CLion2"/>
+		</Unit>
+		<Unit filename="F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/utilities.h">
 			<Option target="CLion2"/>
 		</Unit>
 		<Unit filename="F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/CMakeLists.txt">

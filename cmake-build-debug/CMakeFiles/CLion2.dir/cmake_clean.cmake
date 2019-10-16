@@ -2,7 +2,9 @@ file(REMOVE_RECURSE
   "CLion2.exe"
   "CLion2.exe.manifest"
   "CLion2.pdb"
+  "CMakeFiles/CLion2.dir/MathFunctions.cpp.obj"
   "CMakeFiles/CLion2.dir/main.cpp.obj"
+  "CMakeFiles/CLion2.dir/utilities.cpp.obj"
   "libCLion2.dll.a"
 )
 

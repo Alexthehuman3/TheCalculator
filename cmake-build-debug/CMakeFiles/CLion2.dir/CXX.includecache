@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/main.cpp
+F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/MathFunctions.cpp
+MathFunctions.h
+F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/MathFunctions.h
+
+F:/GameDevProfiles/UWE Games Development/CLion Projects/TheCalculator/MathFunctions.h
 iostream
--
-cctype
--
-cstring
 -
 

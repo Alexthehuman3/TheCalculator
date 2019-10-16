@@ -122,6 +122,33 @@ CLion2/fast:
 	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/build
 .PHONY : CLion2/fast
 
+MathFunctions.obj: MathFunctions.cpp.obj
+
+.PHONY : MathFunctions.obj
+
+# target to build an object file
+MathFunctions.cpp.obj:
+	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/MathFunctions.cpp.obj
+.PHONY : MathFunctions.cpp.obj
+
+MathFunctions.i: MathFunctions.cpp.i
+
+.PHONY : MathFunctions.i
+
+# target to preprocess a source file
+MathFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/MathFunctions.cpp.i
+.PHONY : MathFunctions.cpp.i
+
+MathFunctions.s: MathFunctions.cpp.s
+
+.PHONY : MathFunctions.s
+
+# target to generate assembly for a file
+MathFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/MathFunctions.cpp.s
+.PHONY : MathFunctions.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -149,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utilities.obj: utilities.cpp.obj
+
+.PHONY : utilities.obj
+
+# target to build an object file
+utilities.cpp.obj:
+	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/utilities.cpp.obj
+.PHONY : utilities.cpp.obj
+
+utilities.i: utilities.cpp.i
+
+.PHONY : utilities.i
+
+# target to preprocess a source file
+utilities.cpp.i:
+	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/utilities.cpp.i
+.PHONY : utilities.cpp.i
+
+utilities.s: utilities.cpp.s
+
+.PHONY : utilities.s
+
+# target to generate assembly for a file
+utilities.cpp.s:
+	$(MAKE) -f CMakeFiles\CLion2.dir\build.make CMakeFiles/CLion2.dir/utilities.cpp.s
+.PHONY : utilities.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -158,9 +212,15 @@ help:
 	@echo ... CLion2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... MathFunctions.obj
+	@echo ... MathFunctions.i
+	@echo ... MathFunctions.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... utilities.obj
+	@echo ... utilities.i
+	@echo ... utilities.s
 .PHONY : help
 
 
